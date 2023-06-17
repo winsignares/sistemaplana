@@ -1,3 +1,5 @@
+
+
 creamos maquina virtual
 pip install virtualenv[ESTO SE HACE DENTRO DE LA CARPETA SIBS, es decir hacemos un "cd SIBS"]
 virtualenv venv
@@ -9,4 +11,6 @@ datetime , flask_apscheduler , func , APScheduler ,sqlalchemy
 
 [ESTO SE HACE DENTRO DE LA CARPETA ENV, es decir hacemos un "cd src"]
 
-
+Sus credenciales en el login seran 
+Numero de identificacion: 123
+Pass word: 123
