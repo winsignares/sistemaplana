@@ -2,7 +2,7 @@ from bd import db
 from flask import Blueprint, jsonify 
 from Model.registro import registross
 from Model.plana import planass
-from sqlalchemy import func
+from sqlalchemy import func  
 
 
 

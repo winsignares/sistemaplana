@@ -56,7 +56,7 @@ scheduler.start()
 
 
 
-@scheduler.task('cron', id='actualizar_plana', hour='13', minute='39')
+@scheduler.task('cron', id='actualizar_plana', hour='14', minute='49')
 def actualizar_plana():
     with app.app_context():
         # Obtener la fecha actual
@@ -80,8 +80,9 @@ def actualizar_plana():
             '2023-06-07',
             '2023-06-10',
             '2023-06-15',
-           
-            
+            '2023-06-17',
+            '2023-06-18',    
+
          ]
 
         # Verificar si la fecha actual está en la lista de días festivos
@@ -94,7 +95,7 @@ def actualizar_plana():
             # No es un día festivo, incrementar el saldo de cada alumno en 5
             alumnos = planass.query.all()
             for alumno in alumnos:
-                alumno.Planas += 80
+                alumno.Planas += 100
 
         # Guardar los cambios en la base de datos
         db.session.commit()
