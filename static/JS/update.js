@@ -173,6 +173,7 @@ function update() {
 
 function castigo() {
   const plana = document.getElementById("plana")
+  
   const motivo = document.getElementById("motivo")
   const estado = document.getElementById("estado")
   const finicio = document.getElementById("finicio")
