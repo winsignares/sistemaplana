@@ -1,0 +1,12 @@
+creamos maquina virtual
+pip install virtualenv[ESTO SE HACE DENTRO DE LA CARPETA SIBS, es decir hacemos un "cd SIBS"]
+virtualenv venv
+cd \venv\scripts\activate.bat
+
+pip install flask flask-sqlalchemy flask-marshmallow marshmallow pymysql 
+datetime , flask_apscheduler , func , APScheduler ,sqlalchemy
+
+
+[ESTO SE HACE DENTRO DE LA CARPETA ENV, es decir hacemos un "cd src"]
+
+
