@@ -56,6 +56,8 @@ modal.addEventListener('click', function (event) {
   }
 });
 
+
+
 //Función para abrir el modal CASTIGO 
 function openModal(id) {
   const ontide = document.getElementById('id-e')

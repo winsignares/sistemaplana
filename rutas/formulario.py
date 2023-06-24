@@ -15,12 +15,17 @@ def saveSection():
     Curso= request.form['curso'] 
     Nficha = request.form['Nficha']
     documento = request.form['documento']
+    id_admin = request.form['id_admin']
+    
+    existing_patient = registross.query.filter(
+        (registross.Nficha == Nficha) | (registross.Ndocumento == documento)
+    ).first()
+    if existing_patient:
+        return "Aprendiz existente en la bd"
    
 
-    new_section = registross(nombre, Apellido, Curso , Nficha,documento)
+    new_section = registross(nombre, Apellido, Curso , Nficha,documento,id_admin)
     db.session.add(new_section)
     db.session.commit()
     return "ok"
-
-
 

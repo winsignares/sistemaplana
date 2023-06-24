@@ -61,3 +61,8 @@ def grafico():
 def Modal():
     return render_template('/main/Modal.html')  
 
+
+@routes_home.route("/cuenta" ,  methods=['GET'] )
+def cuenta():
+    return render_template('/main/cuenta.html')  
+

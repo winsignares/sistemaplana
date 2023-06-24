@@ -22,12 +22,13 @@
 <body>
   <section class="form-register">
     <h1 class="logo" style="text-align: center;">Registro De Aprendizes <span>Sn</span></h1> <br>
-    <!-- <input class="controls" type="text" name="nombres" id="id_admin" value="{{ session['admin_id'] }}" disabled  placeholder="id_admin> -->
+
     <input class="controls" type="text" name="nombres" id="nombre" placeholder="Ingrese su Nombre">
     <input class="controls" type="text" name="apellidos" id="Apellido" placeholder="Ingrese su Apellido">
     <input class="controls" type="text" name="curso" id="curso" placeholder="Curso">
     <input class="controls" type="text" name="numero de ficha" id="Nficha" placeholder="Numero de ficha">
     <input class="controls" type="text" name="numero de documento" id="documento" placeholder="Numero de documento">
+
     <button class="botons" id="btn" onclick="habilitar(),guardar()" disabled >Registrar</button>
   </section>
   <script src="{{url_for('static', filename='JS/guardar.js')}}"></script>

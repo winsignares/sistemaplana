@@ -9,16 +9,16 @@ class registross(db.Model):
     curso = db.Column(db.String(111))
     Nficha = db.Column(db.Integer)
     Ndocumento= db.Column(db.Integer)
-    # id_admin= db.Column(db.Integer,db.ForeignKey('validar.id'))
+    id_admin= db.Column(db.Integer,db.ForeignKey('validar.id'))
 
     
-    def __init__(self, nombre, apellido, curso,Nficha,Ndocumento):
+    def __init__(self, nombre, apellido, curso,Nficha,Ndocumento,id_admin):
         self.nombre = nombre
         self.apellido = apellido
         self.curso = curso
         self.Nficha = Nficha
         self.Ndocumento = Ndocumento
-        # self.id_admin =  id_admin
+        self.id_admin =  id_admin
       
     
 with app.app_context():

@@ -19,6 +19,8 @@ from rutas.update import routes_mostrar
 from rutas.castigo import routes_tablacastigo 
 from rutas.buscador import routes_buscador
 from rutas.grafico import routes_grafico
+from rutas.cuenta import routes_cuenta
+from rutas.olvido import routes_olvidado
 
 
 
@@ -31,6 +33,8 @@ app.register_blueprint(routes_tablacastigo  , url_prefix="/fronted")
 app.register_blueprint(routes_validar   , url_prefix="/fronted")
 app.register_blueprint(routes_buscador  , url_prefix="/fronted")
 app.register_blueprint(routes_grafico , url_prefix="/fronted")
+app.register_blueprint(routes_cuenta , url_prefix="/fronted")
+app.register_blueprint(routes_olvidado , url_prefix="/fronted")
 
 
 
